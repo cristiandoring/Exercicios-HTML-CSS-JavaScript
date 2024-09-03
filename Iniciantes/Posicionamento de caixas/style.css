@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+#caixa-sup-direita{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+      
+}
+
+#caixa-sup-esquerda{
+    background-color: red;
+    position: absolute; 
+    top: 0;
+    left: 0;    
+}
+
+#caixa-inf-esquerda{
+    background-color: green;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    
+}
+
+#caixa-inf-direita{
+    background-color: blue;
+    position: fixed; 
+    bottom: 0;
+    right: 0;
+    
+}
