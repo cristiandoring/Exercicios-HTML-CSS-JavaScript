@@ -4,28 +4,56 @@
 }
 body{
     background-color: rgb(154, 193, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
 }
+
 #container{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     background-color: rgb(143, 186, 203);
     border-radius: 5px;
-    width: 950px;
-    
+    width: 900px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.312);
+    margin: auto;
 }
+
 section{
     display: flex;
     flex-flow: column nowrap;
     padding: 15px;
+
 }
+
 img{
-    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
     height: 200px;
     border-radius: 10%;
     padding: 15px;
+
 }
 
 h4{
-    text-align: start;
+
+    font-size: 1.2rem;
+    color: rgba(238, 244, 249, 0.906);
+    font-weight: bold;
+    margin-left: 15px;
+    
+}
+
+p{
+    width: 90%;
+    text-align: justify;
+    padding-top: 5px;
+    color: rgb(85, 147, 172);
+    font-weight: bolder;
+    margin-left: 15px;
+    
 }
