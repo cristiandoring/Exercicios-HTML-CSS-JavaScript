@@ -4,7 +4,46 @@
 }
 
 html, body{
-    height: 100%;
+    height: 98%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
+img{
+    width: 275px;
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 500px;
+    height: 94vh;
+    margin: auto;
+    margin-top: 25px;
+}
+h1{
+    font-size: 3rem;
+    padding: 15px;
+    text-shadow: 0.5px 3px lightsteelblue;
+}
+
+section{
+    text-align: center;
+    padding: 8px;
+    line-height: 1.5;
+    
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+#autor{
+    padding: 15px;
+    text-align: end;
+    width:90%
+}
