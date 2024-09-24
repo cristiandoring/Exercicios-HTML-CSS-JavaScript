@@ -21,7 +21,8 @@ nav{
     align-items: center;
     
 }
-nav > a{
+a{
+    display: inline-block;
     text-decoration: none;
     margin: 0.5px;
     background-color: lightslategray;
@@ -33,8 +34,35 @@ nav > a{
     font-weight: bold;
     border: 1px solid lightslategray;
 }
-
-nav > a:hover{
+a:hover{
     background-color: white;
     color:lightslategray ;
+    
+}
+
+.caixa{
+    position: relative;
+}
+
+ul{
+    display: none;
+    border: 1px solid black;
+    width: 100px;
+    padding:10px;
+    position: absolute;
+    top:100%
+}
+
+.caixa:hover ul{
+    display: block;
+}
+
+ul > li{
+    list-style: none;
+    font-size: 0.8rem;
+}
+ul > li:hover{
+    font-weight: bold;
+    list-style: none;   
+    font-size: 0.8rem;
 }
