@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --fonte-titulos: "Castoro Titling", serif;
+    --fonte-textos:"Khand", sans-serif; 
+}
+
+*{
+    
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fonte-titulos);
+}
+
+p,nav{
+    font-family: var(--fonte-textos);
+}
