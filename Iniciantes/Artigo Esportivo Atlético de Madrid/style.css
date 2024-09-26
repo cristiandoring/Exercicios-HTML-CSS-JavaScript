@@ -8,7 +8,8 @@
 }
 
 *{
-    
+    margin: 0;
+    padding: 0;
 }
 
 h1,h2,h3,h4{
@@ -18,3 +19,51 @@ h1,h2,h3,h4{
 p,nav{
     font-family: var(--fonte-textos);
 }
+
+header{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+#background-header{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    opacity: 0.8;
+}
+
+h1{
+    position: absolute;
+    top: 180px;
+    left: 25%;
+    font-size: 4rem;
+    color:white ;
+    text-shadow: 2px 2px black;
+}
+nav{
+    position: relative;
+    height: 50px;
+
+
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 0px 15px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+nav > a:hover{
+    transition-delay: 0.2s;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+
+
