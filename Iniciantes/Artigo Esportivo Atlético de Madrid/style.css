@@ -4,7 +4,11 @@
 
 :root {
     --fonte-titulos: "Castoro Titling", serif;
-    --fonte-textos:"Khand", sans-serif; 
+    --fonte-textos:"Khand", sans-serif;
+    --azul-claro: #110273;
+    --azul-escuro: #020659;
+    --amarelo:#F2CB05;
+    --vermelho: #F20505;
 }
 
 *{
@@ -64,6 +68,5 @@ nav > a:hover{
     border: 1px solid black;
 
 }
-
 
 
