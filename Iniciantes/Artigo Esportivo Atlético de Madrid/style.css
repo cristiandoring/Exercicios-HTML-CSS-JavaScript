@@ -7,8 +7,9 @@
     --fonte-textos:"Khand", sans-serif;
     --azul-claro: #110273;
     --azul-escuro: #020659;
-    --amarelo:#F2CB05;
-    --vermelho: #F20505;
+    --amarelo:#FFE501;
+    --vermelho: #EC0000;
+    --verde: #294B2B;
 }
 
 *{
@@ -16,11 +17,11 @@
     padding: 0;
 }
 
-h1,h2,h3,h4{
+h1{
     font-family: var(--fonte-titulos);
 }
 
-p,nav{
+h2, h33,h4, p,nav{
     font-family: var(--fonte-textos);
 }
 
@@ -70,3 +71,49 @@ nav > a:hover{
 }
 
 
+body{
+    width: 100%;
+}
+
+main{
+    width: 95%;
+    margin: auto;
+    padding-top: 30px;
+    
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2{
+    color: var(--azul-escuro);
+    background-image:linear-gradient(to right, white, red,  var(--vermelho),red, white);
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3{
+    color: var(--azul-claro);
+    margin: 15px 0px;
+    font-size: 1.8rem;
+    margin: 15px;
+}
+
+#elenco-1911{
+    width: 500px;
+    margin: 25px;
+}
+
+.legendas{
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+}
+p{
+    margin-left: 15px;
+    width: 90%;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-indent: 30px;
+    color: var(--verde);
+}
