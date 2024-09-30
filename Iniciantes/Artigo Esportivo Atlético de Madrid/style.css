@@ -115,14 +115,16 @@ h3{
     margin: 15px;
 }
 
-#elenco-1911{
+#img-elenco-1911{
+    display: block;
     width: 500px;
-    margin: 25px;
+    margin: auto;
 }
 
 .legendas{
     font-size: 0.8rem;
-    margin: 0;
+    margin: 10px 0;
+    padding: 0px 0px 10px 0px;
     text-align: center;
     
 }
@@ -131,7 +133,7 @@ p{
     width: 90%;
     text-align: justify;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.7;
     text-indent: 30px;
     color: black;
 }
