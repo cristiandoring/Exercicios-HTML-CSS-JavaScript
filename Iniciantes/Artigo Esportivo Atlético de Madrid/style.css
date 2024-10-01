@@ -106,6 +106,7 @@ h2{
     padding: 10px;
     text-align: center;
     font-size: 2rem;
+    margin: 25px 0;
 }
 
 h3{
@@ -147,14 +148,16 @@ p{
 
 .coluna-idolos{
     display: inline-block;
- 
-    
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.74);
-    height: 550px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.74);
+    height: auto;
     width: 30%;
     margin: 0 1%;
     vertical-align: top;
     text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
 }
 
 .coluna-idolos > img{
@@ -177,9 +180,7 @@ h4{
     text-align: center;
 }
 
-h5{
-    color: white;
-}
+
 
 .legenda-jogador-clube{
     color: white;
@@ -195,6 +196,6 @@ h5{
     text-decoration: underline;
     font-weight: bold;
     font-size: 1.2rem;
-    text-align: center;
-    margin: 10px;
+    text-align: start;
+    margin: 0px 10px;
 }
