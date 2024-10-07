@@ -242,3 +242,7 @@ footer > p > a:hover{
     margin: auto;
     padding-bottom: 20px;
 }
+
+.lista-titulos{
+    background-color: violet;
+}
