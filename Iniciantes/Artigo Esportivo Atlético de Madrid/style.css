@@ -244,5 +244,37 @@ footer > p > a:hover{
 }
 
 .lista-titulos{
-    background-color: violet;
+    font-family: var(--fonte-textos);    
+    list-style-position: inside;
+    
+
+}
+
+main > section > h3{
+    text-shadow: 1px 1px #110273;
+    text-align: center;
+}
+
+#conteudo-trofeus{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+#conteudo-trofeus > section{
+    background-color: lightgray;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.365);
+    margin: 30px;
+    width: 350px;
+    text-align: center;
+    padding: 25px;
+
+}
+
+.trofeu{
+    width: 170px;
+    margin: 35px 0px;
 }
