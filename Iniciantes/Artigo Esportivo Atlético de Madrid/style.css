@@ -278,3 +278,11 @@ main > section > h3{
     width: 170px;
     margin: 35px 0px;
 }
+
+#container-jogadores{
+    background-color: #FFE501;
+}
+
+#container-jogadores > img{
+    width: 250px;
+}
