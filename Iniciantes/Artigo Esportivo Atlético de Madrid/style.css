@@ -281,8 +281,51 @@ main > section > h3{
 
 #container-jogadores{
     background-color:black;
+    width: 1638px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #container-jogadores > img{
     width: 250px;
+    margin: 5px;
+    background-color: lightgrey;
+
+    
+}
+
+#elenco-atual-titulo{
+    color: white;
+}
+.jogador {
+    position: relative;
+    width: 150px; /* Ajuste conforme o tamanho desejado */
+}
+
+.jogador img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.nome-jogador {
+    
+    position: absolute;
+    width: 152px;
+    height: 25%;
+    margin: auto;
+    background-color:#FFE501; /* Fundo semi-transparente */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: var(--fonte-textos);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.jogador:hover .nome-jogador {
+    opacity: 1;
 }
