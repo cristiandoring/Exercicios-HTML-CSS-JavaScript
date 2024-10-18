@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#informações-pessoais{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+form{
+    display: flex;
+    width: 150px;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    border: 2px inset black;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: thistle;
+}
+label{
+    margin: 0px 0px 0px 3px;
+    
+}
+input{
+    border-radius: 4px;
+    margin: 5px 0px 5px 3px;
+    padding: 2px;
+    font-size: 0.8rem;
+}
+
+#botao-cadastrar{
+    background-color: darkslateblue;
+    color: white;
+    padding: 3px;
+    font-size: 1.2rem;
+    border: 3px solid darkslateblue;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px;
+}
+
+#botao-cadastrar:hover{
+    background-color: white;
+    color: darkslateblue;
+    cursor: pointer;
+}
