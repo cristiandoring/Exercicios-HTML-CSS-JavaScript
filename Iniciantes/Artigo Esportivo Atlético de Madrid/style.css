@@ -207,8 +207,12 @@ h4{
 footer {
     text-align: center; 
     background-color: black;
-    
+    position: fixed;
+    bottom: 0;
+    left: 0;
     font-size: 1rem;
+    width: 100vw;
+    height: 8vh;
 }
 
 footer > p{
