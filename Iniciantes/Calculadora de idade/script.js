@@ -11,5 +11,13 @@ function calculate(){
     const month = parseInt(dateParts[1],10)
     const day = parseInt(dateParts[2],10)
 
-    return document.write(`Dia é ${day}, Mês é ${month}, Ano é ${year}.`)
+    //pegar data atual e separa em ano, mês e dia
+    const currentDayOfYear = new Date()
+
+    const currentYear = currentDayOfYear.getFullYear()
+    const currentMonth = currentDayOfYear.getMonth() + 1
+    const currentDay = currentDayOfYear.getDate()
+
+    
+      return document.write(currentDay)
 }
