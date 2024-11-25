@@ -20,25 +20,6 @@ function calculate(){
     const currentMonth = currentDayOfYear.getMonth() + 1 
     const currentDay = currentDayOfYear.getDate()
 
-    //teste de ano não bissexto para garantir que não tenha datas 30 e 31 em fev
-      /*  if (month == 2){
-            if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-                if(day > 29){
-                    document.getElementById("response").innerHTML = `Write a correct date`
-                    document.getElementById("response").style.color = "red"
-                }
-                else{
-                    document.getElementById("response").innerHTML = `FOI`
-                    document.getElementById("response").style.color = "green"
-                }
-            }
-        }
-        else{
-            document.getElementById("response").innerHTML = `mês não é fev`
-            
-        }
-    /*
-*/
     //calcula as diferenças
     let years = currentYear - year
     let months = currentMonth - month
@@ -78,8 +59,32 @@ function calculate(){
     }
 
     else{
-        response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
-        document.getElementById("response").style.color = "black"
+        //teste ano bissexto
+        if (month == 2){
+            if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+                if(day > 29){
+                    document.getElementById("response").innerHTML = `Write a correct date`
+                    document.getElementById("response").style.color = "red"
+                }
+                else{
+                    response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+                    document.getElementById("response").style.color = "black"
+                }
+            }
+        }
+
+        //testa se foi digitado um dia maior que 31 em meses que tem 30 dias ou menos
+        else if(month == 4 || month == 6 || month == 9 || month == 11){
+            if(day > 30){
+                document.getElementById("response").innerHTML = `Write a correct date`
+                document.getElementById("response").style.color = "red"
+            }
+        }
+        else{
+            response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+            document.getElementById("response").style.color = "black"
+        }
+        
     }
 
 
