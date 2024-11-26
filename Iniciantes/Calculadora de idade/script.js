@@ -1,5 +1,4 @@
 function calculate(){
-
     //armazena o valor retirado do input (formato String)
     const dateValue = document.getElementById('date').value.trim()
     
@@ -25,8 +24,9 @@ function calculate(){
     let months = currentMonth - month
     let days = currentDay - day
 
+    
     //correção dos dados caso o aniversario ainda não tenha ocorrido
-    //se a diferença do mês der negativo, desconta um ano e atribui + 12 ao mês 
+    //se a diferença do mês der negativo, desconta um ano e atribui +12 ao mês 
     if(months < 0){
         years --
         months +=  12
@@ -36,25 +36,35 @@ function calculate(){
     if(days < 0){
         const lastMonth = new Date(currentYear, currentMonth - 1, 0)
         days += lastMonth.getDate()
+        months--
+        
+        if (months < 0) { // Se os meses ficarem negativos após ajuste, descontamos os anos e adicionamos os meses
+            months += 12;
+            years--;
+        }
     }
 
     //testa se o ano digitado é maior que o ano atual 
     if(year > currentYear){
         document.getElementById("response").innerHTML = `Write a correct date`
         document.getElementById("response").style.color = "red"
+        return
     }
     else if(year === currentYear){
         if(month > currentMonth){
             document.getElementById("response").innerHTML = `Write a correct date`
             document.getElementById("response").style.color = "red"
+            return
         }
         else if (month === currentMonth && day > currentDay){
              document.getElementById("response").innerHTML = `Write a correct date`
              document.getElementById("response").style.color = "red"
+             return
         }
         else{
             response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
             document.getElementById("response").style.color = "black"
+            return
         }
     }
 
@@ -65,11 +75,26 @@ function calculate(){
                 if(day > 29){
                     document.getElementById("response").innerHTML = `Write a correct date`
                     document.getElementById("response").style.color = "red"
+                    return
                 }
                 else{
                     response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
                     document.getElementById("response").style.color = "black"
+                    return
                 }
+            }
+            else{
+                if(day > 28){
+                    document.getElementById("response").innerHTML = `Write a correct date`
+                    document.getElementById("response").style.color = "red"
+                    return
+                }
+                else{
+                    response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+                    document.getElementById("response").style.color = "black"
+                    return
+                }
+                
             }
         }
 
@@ -78,16 +103,18 @@ function calculate(){
             if(day > 30){
                 document.getElementById("response").innerHTML = `Write a correct date`
                 document.getElementById("response").style.color = "red"
+                return
+            }
+            else{
+                response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+                document.getElementById("response").style.color = "black"
+                return
             }
         }
         else{
-            response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+            response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`
             document.getElementById("response").style.color = "black"
-        }
-        
-    }
-
-
-    
-
+            return
+        }   
+    }   
 }
