@@ -62,7 +62,7 @@ function calculate(){
              return
         }
         else{
-            response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+            response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months and ${days} days old.`;
             document.getElementById("response").style.color = "black"
             return
         }
@@ -78,7 +78,7 @@ function calculate(){
                     return
                 }
                 else{
-                    response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+                    response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months and ${days} days old.`;
                     document.getElementById("response").style.color = "black"
                     return
                 }
@@ -90,7 +90,7 @@ function calculate(){
                     return
                 }
                 else{
-                    response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+                    response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months and ${days} days old.`;
                     document.getElementById("response").style.color = "black"
                     return
                 }
@@ -106,13 +106,13 @@ function calculate(){
                 return
             }
             else{
-                response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`;
+                response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months and ${days} days old.`;
                 document.getElementById("response").style.color = "black"
                 return
             }
         }
         else{
-            response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months, and ${days} days old.`
+            response = document.getElementById("response").innerHTML = `You have ${years} years, ${months} months and ${days} days old.`
             document.getElementById("response").style.color = "black"
             return
         }   
